@@ -1,10 +1,10 @@
-function criaCartao(categoria, pergunta, resposta){
-  
+function criaCartao(categoria, pergunta, resposta) {
+
   const container = document.getElementById("container");
-  
+
   const cartao = document.createElement("article");
   cartao.className = "cartao";
-  
+
   cartao.innerHTML = `
     <div class="cartao__conteudo">
       <h3>${categoria}</h3>
@@ -12,7 +12,7 @@ function criaCartao(categoria, pergunta, resposta){
       <div class="cartao__conteudo__resposta"><p>${resposta}</p></div>
     </div>`;
 
-  cartao.addEventListener("click", ()=>cartao.classList.toggle("active"));
+  cartao.addEventListener("click", () => cartao.classList.toggle("active"));
 
   container.appendChild(cartao);
 }
