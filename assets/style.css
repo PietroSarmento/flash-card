@@ -8,8 +8,8 @@
 body{
   margin:0;
   font-family:"Bai Jamjuree",sans-serif;
-  background:#f5f7fa;          
-}
+    background:url('img/bg-desktop.webp') center/cover no-repeat fixed; 
+}         
 
 #container{
   display:flex;           
